@@ -1,0 +1,151 @@
+<div data-role="page" id="list" data-title="JQM list">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>header</h1>
+    </div>
+    <div data-role="content">
+        <h1>只读无须列表</h1>
+        <ul data-role="listview">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+        <h1>只读有序列表</h1>
+        <ol data-role="listview">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ol>
+        <h1>有序列表</h1>
+        <ol data-role="listview">
+            <li data-role="list-divider">number</li>
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">three</a></li>
+            <li data-role="list-divider">中文</li>
+            <li><a href="#">一</a></li>
+            <li><a href="#">二</a></li>
+            <li><a href="#">三</a></li>
+        </ol>
+        <h1>无序列表</h1>
+        <ul data-role="listview" data-inset="true" data-icon="check">
+            <li data-role="list-divider">number</li>
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">three</a></li>
+            <li data-role="list-divider">中文</li>
+            <li><a href="#">一</a></li>
+            <li><a href="#">二</a></li>
+            <li><a href="#">三</a></li>
+        </ul>
+        <h1>自动分栏</h1>
+        <ul data-role="listview" data-autodividers="true">
+            <li><a href="#">a</a></li>
+            <li data-icon="arrow-u"><a href="#">aa</a></li>
+            <li data-icon="arrow-r"><a href="#">b</a></li>
+            <li data-icon="arrow-d"><a href="#">bb</a></li>
+            <li data-icon="arrow-l"><a href="#">c</a></li>
+            <li><a href="#">cc</a></li>
+        </ul>
+        <h1>添加搜索框</h1>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="关键词搜索...">
+            <li><a href="#">a</a></li>
+            <li><a href="#">aa</a></li>
+            <li><a href="#">b</a></li>
+            <li><a href="#">bb</a></li>
+            <li><a href="#">c</a></li>
+            <li><a href="#">cc</a></li>
+        </ul>
+        <h2>列表缩略图(图片大于16x16)</h2>
+        <ul data-role="listview" data-split-theme="e">
+            <li>
+                <a href="#">
+                    <img src="../image/chrome.png" alt="chrome">
+                    <h2>chrome</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque consequatur cumque distinctio dolor ducimus error excepturi facilis, fuga id ipsam omnis quasi quo rerum sit tempora ullam veritatis. Fugiat.</p>
+                </a>
+                <a href="#download" data-rel="dialog">下载chrome</a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../image/firefox.png" alt="firefox">
+                    <h2>firefox</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aspernatur autem beatae cum deleniti dicta earum illo impedit magnam maiores nam, nulla officiis pariatur provident quas quibusdam reiciendis tempore</p>
+                </a>
+            </li>
+        </ul>
+        <h2>列表缩略图(图片小于16x16)</h2>
+        <ul data-role="listview">
+            <li>
+                <a href="#">
+                    <img src="../image/16x16/us.png" class="ui-li-icon" alt="usa">
+                    usa
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../image/16x16/france.png" class="ui-li-icon" alt="france">
+                    <span>france</span>
+                </a>
+                <a href="#">xxx</a>
+            </li>
+        </ul>
+        <h2>计算泡沫</h2>
+        <ul data-role="listview">
+            <li><a href="#">收件箱<span class="ui-li-count">312</span></a></li>
+            <li><a href="#">写信箱<span class="ui-li-count">23</span></a><a href="#">xx</a></li>
+        </ul>
+        <h2>实现可折叠</h2>
+        <div data-role="collapsible-set" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-theme="b" data-content-theme="e">
+            <div data-role="collapsible">
+                <h4>aaa</h4>
+                <ul data-role="listview">
+                    <li><a href="#">aaaaa</a></li>
+                    <li><a href="#">aaaaaaa</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h4>bbb</h4>
+                <ul data-role="listview">
+                    <li><a href="#">bbbb</a></li>
+                    <li><a href="#">bbbbbbb</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2>日历</h2>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">xxxx<span class="ui-li-count">10</span></li>
+            <li><a href="#">
+                <img src="../image/chrome.png" alt="chrome">
+                <h4>xxxxx</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis et eum inventore ipsam laboriosam minima minus necessitatibus quas, quod reprehenderit voluptas voluptates. Cumque distinctio eveniet laboriosam neque sequi, totam.</p>
+                <p class="ui-li-aside">xxxxxx</p>
+            </a></li>
+            <li><a href="#">
+                <h4>xxxxx</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis et eum inventore ipsam laboriosam minima minus necessitatibus quas, quod reprehenderit voluptas voluptates. Cumque distinctio eveniet laboriosam neque sequi, totam.</p>
+                <p class="ui-li-aside">xxxxxx</p>
+            </a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="../index.html" data-transition="flip" data-icon="home">index</a></li>
+                <li><a href="page1.html" data-transition="flip" data-icon="grid">page1</a></li>
+                <li><a href="page2.html" data-transition="flip" data-icon="gear">page2</a></li>
+                <li><a href="page3.html" data-transition="flip" data-icon="star" class="ui-btn-active ui-state-persist">page3</a></li>
+                <li><a href="page4.html" data-transition="flip" data-icon="info">page4</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="download" data-overlay-theme="e">
+    <div data-role="content">
+        <h3>下载chrome</h3>
+        <div data-role="controlgroup" data-type="horizontal">
+            <a href="#list" data-role="button" data-icon="check">下载</a>
+            <a href="#list" data-role="button" data-icon="delete">取消</a>
+        </div>
+    </div>
+</div>
