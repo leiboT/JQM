@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <style>
+        .ui-content [class^='ui-grid'] [class^='ui-block']{
+            border: 1px solid #e4393c;
+            text-align: center;
+        }
+        .ui-bar-f
+        {
+            color:green;
+            background-color:yellow;
+        }
+        .ui-body-f
+        {
+            color: #222;
+            text-shadow: 0 1px 0 #fff;
+            background: #fff9df;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#fffadf),to(#fff3a5));
+            background-image: -webkit-linear-gradient(#fffadf,#fff3a5);
+            background-image: -moz-linear-gradient(#fffadf,#fff3a5);
+            background-image: -ms-linear-gradient(#fffadf,#fff3a5);
+            background-image: -o-linear-gradient(#fffadf,#fff3a5);
+            background-image: linear-gradient(#fffadf,#fff3a5);
+        }
+        .ui-btn-up-f {
+            text-decoration: none;
+            border: 1px solid #f4c63f;
+            background: #fadb4e;
+            font-weight: 700;
+            color: #222;
+            text-shadow: 0 1px 0 #fff;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#ffefaa),to(#ffe155));
+            background-image: -webkit-linear-gradient(#ffefaa,#ffe155);
+            background-image: -moz-linear-gradient(#ffefaa,#ffe155);
+            background-image: -ms-linear-gradient(#ffefaa,#ffe155);
+            background-image: -o-linear-gradient(#ffefaa,#ffe155);
+            background-image: linear-gradient(#ffefaa,#ffe155);
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="index" data-title="JQM button&events">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#" data-role="button" data-icon="home">首页</a>
+            <h1>我的主页</h1>
+            <a href="#" data-role="button" data-icon="search" data-iconpos="right">搜索</a>
+        </div>
+        <div data-role="content" data-theme="f">
+            <h1>index page</h1>
+            <a href="tpl/page1.html" data-role="button" data-transition="flip" data-inline="true">子页面一</a>
+            <a href="tpl/page2.html" data-role="button" data-transition="flip" data-rel="dialog">子页面二</a>
+            <div data-role="controlgroup" data-type="vertical">
+                <a href="#" data-role="button" data-icon="search">按钮 1</a>
+                <a href="#" data-role="button">按钮 2</a>
+                <a href="#" data-role="button">按钮 3</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-role="button" data-icon="search" data-iconpos="top">按钮 1</a>
+                <a href="#" data-role="button" data-icon="arrow-u" data-iconpos="right">按钮 2</a>
+                <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="bottom">按钮 3</a>
+                <a href="#" data-role="button" data-icon="arrow-d" data-iconpos="left">按钮 4</a>
+                <a href="#" data-role="button" data-icon="arrow-l" data-iconpos="notext">按钮 5</a>
+            </div>
+            <ul data-role="listview" data-inset="true" class="mylist">
+                <li>
+                    <a href="#">点击我会消失</a>
+                </li>
+                <li>
+                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem, deleniti dolore dolorem earum inventore ipsa iure porro recusandae reiciendis saepe tempora tempore temporibus, veniam voluptatibus. Debitis perferendis possimus quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dicta, distinctio earum eum fugit in laboriosam laborum laudantium necessitatibus nesciunt, nobis odit quaerat quibusdam repellat rerum sint soluta voluptate voluptates.</a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="c">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" class="ui-btn-active ui-state-persist" data-transition="flip" data-icon="home">index</a></li>
+                    <li><a href="tpl/page1.html" data-transition="flip" data-icon="grid">page1</a></li>
+                    <li><a href="tpl/page2.html" data-transition="flip" data-icon="gear">page2</a></li>
+                    <li><a href="tpl/page3.html" data-transition="flip" data-icon="star">page3</a></li>
+                    <li><a href="tpl/page4.html" data-transition="flip" data-icon="info">page4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<script>-->
+        <!--$("#index").on('pagebeforecreate', function () {-->
+          <!--alert('pagebeforecreate')-->
+        <!--});-->
+        <!--$("#index").on('pagecreate', function () {-->
+          <!--alert('pagecreate')-->
+        <!--});-->
+        <!--$("#index").on('pageinit', function () {-->
+          <!--alert('pageinit')-->
+        <!--});-->
+        <!--$(document).on('pagebeforeload', function () {-->
+          <!--alert('pagebeforeload')-->
+        <!--});-->
+        <!--$(document).on('pageload', function () {-->
+          <!--alert('pageload')-->
+        <!--});-->
+        <!--$(document).on('pagebeforeshow', function () {-->
+          <!--alert('pagebeforeshow')-->
+        <!--});-->
+        <!--$(document).on('pageshow', function () {-->
+          <!--alert('pageshow')-->
+        <!--});-->
+        <!--$(document).on('pagebeforehide', function () {-->
+          <!--alert('pagebeforehide')-->
+        <!--});-->
+        <!--$(document).on('pagehide', function () {-->
+          <!--alert('pagehide')-->
+        <!--});-->
+        <!--$(document).on('pageinit', '#index', function () {-->
+          <!--let a = $(".mylist a");-->
+          <!--a.on('click',function () {-->
+            <!--console.log('is click');-->
+          <!--});-->
+          <!--a.on('tap',function () {-->
+            <!--console.log('is tap');-->
+          <!--});-->
+          <!--a.on('taphold',function () {-->
+            <!--console.log('is taphold');-->
+          <!--});-->
+          <!--a.on('swipe',function () {-->
+            <!--console.log('is swipe');-->
+          <!--});-->
+          <!--a.on('swipeleft',function () {-->
+            <!--console.log('is swipeleft');-->
+          <!--});-->
+          <!--a.on('swiperight',function () {-->
+            <!--console.log('is swiperight');-->
+          <!--});-->
+          <!--$(document).on('scrollstart',function () {-->
+            <!--alert('scroll start')-->
+          <!--});-->
+          <!--$(document).on('scrollstop',function () {-->
+            <!--alert('scroll stop')-->
+          <!--});-->
+        <!--})-->
+    <!--</script>-->
+</body>
+</html>
